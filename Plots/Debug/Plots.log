@@ -1,0 +1,75 @@
+﻿Build started 04-01-2017 16:30:24.
+     1>Project "C:\Users\surface\Documents\ASR\Plots\Plots\Plots.vcxproj" on node 2 (Build target(s)).
+     1>_Intel_OpenCL_Build_Rules:
+         Preprocessing: gemv.cl
+         cmd.exe /Q /C "C:\Users\surface\AppData\Local\Temp\tmpdb6e216e9bae4a12b6d60ffa28908ed1.cmd"
+         "C:\Program Files (x86)\Intel\OpenCL SDK\6.3\bin\x86\ioc32.exe" -cmd=build -input="C:\Users\surface\Documents\ASR\Plots\Plots\gemv.cl" -output="Debug\gemv.out" -VS -device=CPU -simd=default -targetos=current            -bo="           "
+         Setting target instruction set architecture to: Default (Advanced Vector Extension 2 (AVX2))
+         OpenCL Intel CPU device was found!
+         Device name: Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz
+         Device version: OpenCL 2.0 (Build 10094)
+         Device vendor: Intel(R) Corporation
+         Device profile: FULL_PROFILE
+         Compilation started
+         Compilation done
+         Linking started
+         Linking done
+         Device build started
+         Device build done
+         Kernel <gemv> was successfully vectorized (8)
+         Kernel <gemv_no_memAccess> was successfully vectorized (8)
+         Kernel <gemv_blank> was successfully vectorized (8)
+         Kernel <gemv_no_SIMD> was successfully vectorized (8)
+         Done.
+         gemv info:
+         	Maximum work-group size: 2048
+         	Compiler work-group size: (0, 0, 0)
+         	Local memory size: 0
+         	Preferred multiple of work-group size: 128
+         	Minimum amount of private memory: 128
+         
+         gemv_no_memAccess info:
+         	Maximum work-group size: 2048
+         	Compiler work-group size: (0, 0, 0)
+         	Local memory size: 0
+         	Preferred multiple of work-group size: 128
+         	Minimum amount of private memory: 128
+         
+         gemv_blank info:
+         	Maximum work-group size: 8192
+         	Compiler work-group size: (0, 0, 0)
+         	Local memory size: 0
+         	Preferred multiple of work-group size: 128
+         	Minimum amount of private memory: 0
+         
+         gemv_no_SIMD info:
+         	Maximum work-group size: 2048
+         	Compiler work-group size: (0, 0, 0)
+         	Local memory size: 0
+         	Preferred multiple of work-group size: 128
+         	Minimum amount of private memory: 128
+         
+         Build succeeded!
+         
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Intel\OpenCL SDK\6.3\include" /Zi /nologo /W3 /WX- /Od /Oy- /D Win32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Plots.cpp
+         Plots.cpp
+     1>Plots.cpp(106): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>Plots.cpp(299): warning C4018: '<' : signed/unsigned mismatch
+     1>Plots.cpp(303): warning C4996: 'clCreateCommandQueue': was declared deprecated
+                 C:\Program Files (x86)\Intel\OpenCL SDK\6.3\include\CL/cl.h(1428) : see declaration of 'clCreateCommandQueue'
+     1>Plots.cpp(342): warning C4101: 'CPU_event' : unreferenced local variable
+     1>Plots.cpp(342): warning C4101: 'GPU_event' : unreferenced local variable
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\surface\Documents\ASR\Plots\Debug\Plots.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Intel\OpenCL SDK\6.3\lib\x86" OpenCL.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\surface\Documents\ASR\Plots\Debug\Plots.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\surface\Documents\ASR\Plots\Debug\Plots.lib" /MACHINE:X86 Debug\Plots.obj
+         Plots.vcxproj -> C:\Users\surface\Documents\ASR\Plots\Debug\Plots.exe
+       PostBuildEvent:
+         If exist "*.cl" copy "*.cl" "C:\Users\surface\Documents\ASR\Plots\Debug\\"
+         :VCEnd
+         gemv.cl
+                 1 file(s) copied.
+     1>Done Building Project "C:\Users\surface\Documents\ASR\Plots\Plots\Plots.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.83

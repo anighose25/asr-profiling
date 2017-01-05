@@ -1,0 +1,87 @@
+All times reported are in microsecond
+
+
+Work-size : 512
+-----------------------------
+
+CPU 
+
+Total Time - 270
+Blank Kernel Latency - 170
+Execution Time - 100
+Memory access latency - 70
+Compute latency (Compute partial dots)- 30
+Compute latency (Add partial dots)- NiL
+
+GPU 
+
+Total Time - 590
+Blank Kernel Latency - 470
+Execution Time - 120
+Memory access latency - 80
+Compute latency (Compute partial dots)- 40
+Compute latency (Add partial dots)- Negligible
+
+
+Work-size : 1024
+-----------------------------
+
+CPU 
+
+Total Time - 520
+Blank Kernel Latency - 180
+Execution Time - 340
+Memory access latency - 230
+Compute latency (Compute partial dots)- 110
+Compute latency (Add partial dots)- NiL
+
+GPU 
+
+Total Time - 900
+Blank Kernel Latency - 570
+Execution Time - 330
+Memory access latency - 200
+Compute latency (Compute partial dots)- 130
+Compute latency (Add partial dots)- Negligible
+
+Work-size : 2048
+-----------------------------
+
+CPU 
+
+Total Time - 1350
+Blank Kernel Latency - 200
+Execution Time - 1150
+Memory access latency - 800
+Compute latency (Compute partial dots)- 350
+Compute latency (Add partial dots)-	NiL
+
+GPU 
+
+Total Time - 2000
+Blank Kernel Latency - 1000
+Execution Time - 1000
+Memory access latency - 800
+Compute latency (Compute partial dots)- 200
+Compute latency (Add partial dots)-	Negligible
+
+Work-size : 4096
+-----------------------------
+
+CPU 
+
+Total Time - 4400
+Blank Kernel Latency - 220
+Execution Time - 4180
+Memory access latency - 2700
+Compute latency (Compute partial dots)- 1480
+Compute latency (Add partial dots)-	NiL
+
+GPU 
+
+Total Time - 6700
+Blank Kernel Latency - 2500
+Execution Time - 4200
+Memory access latency - 2900
+Compute latency (Compute partial dots)- 1300
+Compute latency (Add partial dots)- Negligible

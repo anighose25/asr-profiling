@@ -1,0 +1,5 @@
+dimension,workgroup-size,Partitioned
+512,4,310
+1024,8,668
+2048,16,1455
+3072,32,1701
